@@ -70,7 +70,7 @@ SESSION_ENGINE = "appengine_sessions.backends.cached_db"
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Europe/Stockholm'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -129,7 +129,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '^(&s11q!@t2j@=dgpp65k+df6o1(@1h9cq-$^p@=k4!5))xi6u'
+SECRET_KEY = '{-Y"rJg_54{~_r/p_9_j2-Q\-pQUh6/4>PY--K-9nbv_Ux54'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -161,12 +161,10 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
+    'base',
+    'post',
     'appengine_sessions',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'bootstrap3',
 )
 
 # A sample logging configuration. The only tangible logging

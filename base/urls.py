@@ -1,11 +1,10 @@
-from django.conf import settings
 from django.conf.urls.defaults import url, patterns
+from django.conf import settings
 
 
-urlpatterns = patterns('core.views',
-    url(r'^$', 'hello_world', {}, name='hello-world'),
+urlpatterns = patterns(
+    '',
 )
-
 
 if settings.DEBUG:
     urlpatterns += patterns('django.views.generic.simple',
